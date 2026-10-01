@@ -1,0 +1,1 @@
+export default function Contact(){return <div className="mx-auto max-w-5xl px-6 py-20"><h1 className="text-5xl font-black">Contact Benzo Logistics</h1><div className="mt-8 rounded-3xl bg-navy p-8 text-xl leading-10 text-white">Sandringham, Johannesburg<br/>063 446 9218<br/>068 666 0141</div></div>}

@@ -1,0 +1,3 @@
+import Link from 'next/link';
+const links=[['/','Home'],['/about','About'],['/services','Services'],['/pricing','Pricing'],['/tracking','Tracking'],['/booking','Booking'],['/contact','Contact']];
+export function Navigation(){return <header className="sticky top-0 z-50 bg-navy/95 backdrop-blur"><nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4"><Link href="/" className="text-xl font-black tracking-[.2em] text-white">BENZO</Link><div className="hidden gap-6 md:flex">{links.map(([href,label])=><Link key={href} href={href} className="text-sm text-blue-100 hover:text-white">{label}</Link>)}</div><Link href="/booking" className="rounded-full bg-white px-5 py-2 text-sm font-bold text-navy">Get a quote</Link></nav></header>}

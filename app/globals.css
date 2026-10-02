@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #0b1f3a;
+  --gold: #d4af6d;
+  --ivory: #f7f3ee;
+  --charcoal: #1e1e1e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8f7f4;
+  color: var(--charcoal);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.section-title {
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+  color: var(--navy);
+}
+
+.gold-text {
+  color: var(--gold);
+}
+
+.soft-card {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(11, 31, 58, 0.08);
+  border-radius: 1.5rem;
+  box-shadow: 0 16px 40px rgba(11, 31, 58, 0.08);
+}
+
+.hero-glow {
+  background: radial-gradient(circle, rgba(212, 175, 109, 0.28), transparent 60%);
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
